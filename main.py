@@ -1,22 +1,28 @@
-import unittest #导入单元测试框架
+import unittest
 from testcases.test_user import TestUser
+from util.log import Log
+
 
 if __name__ == '__main__':
-    #创建测试套件并加载测试用例（控制测试用例执行顺序）
+
+    #加载日志信息
+    log=Log()
+    log.info('开始运行')
+
+    #创建测试套件
     suite=unittest.TestSuite()
-    # suite.addTest(TestUser('test_register'))
-    # suite.addTest(TestUser('test_login'))
-    tests=[TestUser('test_register'),TestUser('test_login')]
-    suite.addTests(tests)
-    #使用TextTestRunner()类的run()方法，来运行测试套件TestSuite中的测试用例集合
+
+    #定义要执行的测试用例
+    # test_cases=[TestUser('test_register'),TestUser('test_login')]
+    # test_cases = unittest.TestLoader.loadTestsFromTestCase(TestUser)
+    start_dir='./testcases/'
+    test_cases=unittest.defaultTestLoader.discover(start_dir, pattern='test*.py', top_level_dir=None)
+
+    #将要执行的测试用例加载到测试套件中
+    suite.addTests(test_cases)
+
+    #运行测试套件
     runner=unittest.TextTestRunner()
     runner.run(suite)
 
-    # TestLoader()类来控制需要执行那些测试用例
-    # loader=unittest.TestLoader()
-    # loader.discover(patter='text*.py')
-    # loader.loadTestsFromTestCase(TestUser)
-
-
-
-
+    log.info('运行结束')

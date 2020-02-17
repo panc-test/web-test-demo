@@ -4,6 +4,7 @@ import unittest
 class TestUser(unittest.TestCase):
 
     # 测试用例执行前的环境准备
+    # @classmethod引入装饰器
     def setUp(self):
         print('test start')
 
