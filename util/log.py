@@ -1,3 +1,7 @@
+'''
+logging日志模块封装
+'''
+
 import logging
 
 
@@ -9,11 +13,14 @@ class Log(object):
     def __init__(self):
         #设置日志级别
         self.logger.setLevel(logging.INFO)
+
         #设置handler文件流
         handler=logging.FileHandler(filename='./logs/app.log',  encoding='utf-8')
+
         #设置handler文件流格式
         formatter=logging.Formatter('%(asctime)s  -%(levelname)s -%(name)s -%(message)s')
         handler.setFormatter(formatter)
+
         #将logger加载到handler文件流
         self.logger.addHandler(handler)
 
