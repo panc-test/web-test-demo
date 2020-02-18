@@ -1,5 +1,5 @@
 import unittest #导入单元测试框架
-from testcases.test_user import TestUser
+from testcases.test_register import TestUser
 import HTMLReport
 # import HTMLTestRunner
 
