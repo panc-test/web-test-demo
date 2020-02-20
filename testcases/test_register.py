@@ -20,13 +20,13 @@ class Test_Register(unittest.TestCase):
         driver.quit()
 
     #test1
-    def test_register(self):
+    def test1_register(self):
         #创建一个注册页面实例化对象
-        rp=Register_Page()
+        register1=Register_Page()
         #打开注册页面
-        rp.go_register()
+        register1.go_register()
         #执行测试用例
-        rp.register(loginname='aaa',password='bbb',repassword='bbb',email='ccc')
+        register1.register(loginname='aaa',password='bbb',repassword='bbb',email='ccc')
 
 
 

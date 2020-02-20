@@ -5,8 +5,8 @@ POM模型-用户注册登录界面的操作
 
 from util.basic_driver import driver
 from util.log import Log
+from selenium.common.exceptions import NoSuchElementException
 from actions.screenshorts import Screeenshots
-import os
 
 log=Log()
 
@@ -43,17 +43,14 @@ class Register_Page(Screeenshots):  #注意不是继承Object
             button = driver.find_element_by_css_selector(self.register_button_css)
             button.click()
 
-            Screeenshots.info_screenshots(self,filename='注册成功')
+        except  NoSuchElementException:
+            log.error('注册页面元素定位异常')
+            Screeenshots.error_screenshots(self, filename='注册页面元素定位异常')
 
         except  Exception:
-            Screeenshots.error_screenshots(self,filename='注册失败')
-            log.error('注册失败')
-            os._exit()
+            log.error('注册页面其它异常')
+            Screeenshots.error_screenshots(self,filename='注册页面其它异常')
 
-
-
-
-            #os._exit() 用于在线程中退出,sys.exit()用于在主线程中退出，exit(0)#终止退出程序，会关闭窗口
 
 
 

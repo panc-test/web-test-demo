@@ -11,7 +11,7 @@ log=Log()
 #创建测试套件，并加载测试用例
 def suite():
     suite = unittest.TestSuite()
-    suite.addTest(Test_Register('test_register'))
+    suite.addTest(Test_Register('test1_register'))
     return suite
 
 #执行测试用例，记录日志，并输出测试结果
