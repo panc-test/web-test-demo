@@ -3,6 +3,7 @@ logging日志模块封装
 '''
 
 import logging
+import os
 
 
 class Log(object):
@@ -11,14 +12,20 @@ class Log(object):
     logger = logging.getLogger()
 
     def __init__(self):
-        #设置日志级别
-        self.logger.setLevel(logging.INFO)
+        root_path = os.path.dirname(os.path.dirname(__file__))  # __file__指的是当前文件路径
+        logs_path = os.path.join(root_path, 'logs')
+        if not os.path.exists(logs_path):
+            os.mkdir(logs_path)
+        self.logfile=os.path.join(logs_path,'app.log')
 
     #创建私有方法来处理日志重复的问题
     def __console(self,name,msg):
 
+        #设置日志级别
+        self.logger.setLevel(logging.INFO)
+
         #设置handler文件流
-        handler=logging.FileHandler(filename='./logs/app.log',  encoding='utf-8')
+        handler=logging.FileHandler(filename=self.logfile,  encoding='utf-8')
 
         #设置handler文件流格式
         formatter=logging.Formatter('%(asctime)s  -%(levelname)s -%(name)s -%(message)s')
