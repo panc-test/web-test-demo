@@ -1,4 +1,7 @@
-#测试用例
+'''
+测试注册功能
+'''
+
 import time
 import unittest
 from selenium import  webdriver
@@ -17,16 +20,20 @@ class Test_Register(unittest.TestCase):
 
     # 测试用例执行结束后的环境恢复
     def tearDown(self) -> None:
+        driver.delete_all_cookies()
         driver.quit()
 
-    #test1
-    def test1_register(self):
+    #test
+    def test_register(self):
         #创建一个注册页面实例化对象
-        register1=Register_Page()
+        rp=Register_Page()
         #打开注册页面
-        register1.go_register()
+        rp.go_register()
         #执行测试用例
-        register1.register(loginname='aaa',password='bbb',repassword='bbb',email='ccc')
+        rp.register(loginname='aaa',password='bbb',repassword='bbb',email='ccc')
+
+        #断言实际结果跟测试结果是否一致
+
 
 
 

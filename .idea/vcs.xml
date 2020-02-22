@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../web_study" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Python_Study" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Selenium_Study" vcs="Git" />
   </component>
 </project>

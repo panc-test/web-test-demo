@@ -1,16 +1,16 @@
 '''
-POM模型-用户注册登录界面的操作
+POM模型-用户注册界面的操作
 
 '''
 
 from util.basic_driver import driver
 from util.log import Log
 from selenium.common.exceptions import NoSuchElementException
-from actions.screenshorts import Screeenshots
+
 
 log=Log()
 
-class Register_Page(Screeenshots):  #注意不是继承Object
+class Register_Page():
 
     def __init__(self):
         self.register_name_id='loginname'
@@ -45,11 +45,10 @@ class Register_Page(Screeenshots):  #注意不是继承Object
 
         except  NoSuchElementException:
             log.error('注册页面元素定位异常')
-            Screeenshots.error_screenshots(self, filename='注册页面元素定位异常')
 
         except  Exception:
             log.error('注册页面其它异常')
-            Screeenshots.error_screenshots(self,filename='注册页面其它异常')
+
 
 
 

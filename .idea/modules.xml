@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../python-study/.idea/PythonPractices.iml" filepath="$PROJECT_DIR$/../python-study/.idea/PythonPractices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python_Study/.idea/PythonPractices.iml" filepath="$PROJECT_DIR$/../Python_Study/.idea/PythonPractices.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/webTest_Cnode.iml" filepath="$PROJECT_DIR$/.idea/webTest_Cnode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../web_study/.idea/web_study.iml" filepath="$PROJECT_DIR$/../web_study/.idea/web_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Selenium_Study/.idea/web_study.iml" filepath="$PROJECT_DIR$/../Selenium_Study/.idea/web_study.iml" />
     </modules>
   </component>
 </project>

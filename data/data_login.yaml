@@ -1,0 +1,23 @@
+登录成功:
+   name: 'testuser1'
+   passwd: '123456'
+   assert_text: 'testuser1'
+
+登陆失败——没有密码:
+   name: 'testuser1'
+   passwd: ''
+   assert_text: '信息不完整'
+
+登陆失败-没有用户名:
+   name: ''
+   passwd: '123456'
+   assert_text: '信息不完整'
+
+登陆失败-登录信息错误:
+   name: 'xxx'
+   passwd: 'xxxxx'
+   assert_text: '用户名或密码错误'
+
+
+
+
