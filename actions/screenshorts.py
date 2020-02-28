@@ -7,11 +7,7 @@ from util.basic_driver import driver
 import time
 
 
-
-
-#创建一个保存测试截图的类
 class Screeenshots(object):
-
 
     #创建一个images文件夹保存测试截图
     def get_screenshots_path(self):

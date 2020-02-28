@@ -7165,7 +7165,7 @@ body.skin-3 {
             "className": "Test_Login",
             "methodName": "test_login_00001_登录成功",
             "description": "test_login_00001_登录成功",
-            "spendTime": "36.6 s",
+            "spendTime": "42.1 s",
             "status": "成功",
             "log": [
                 ""
@@ -7195,14 +7195,14 @@ body.skin-3 {
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\http\\client.py\", line 944, in send\n    self.connect()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connection.py\", line 181, in connect\n    conn = self._new_conn()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connection.py\", line 167, in _new_conn\n    raise NewConnectionError(\n",
-                "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000016D7489AEE0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\n",
+                "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002150A74B5E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\n",
                 "\nDuring handling of the above exception, another exception occurred:\n\n",
                 "Traceback (most recent call last):\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 672, in run\n    self._callSetUp()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 630, in _callSetUp\n    self.setUp()\n",
-                "  File \"E:\\GitHub\\Web_Framework\\testcases\\test_login.py\", line 22, in setUp\n    self.driver.implicitly_wait(30)\n",
-                "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 911, in implicitly_wait\n    self.execute(Command.SET_TIMEOUTS, {\n",
+                "  File \"E:\\GitHub\\Web_Framework\\testcases\\test_login.py\", line 19, in setUp\n    driver.maximize_window()\n",
+                "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 737, in maximize_window\n    self.execute(command, params)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 319, in execute\n    response = self.command_executor.execute(driver_command, params)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 374, in execute\n    return self._request(command_info[0], url, body=data)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 397, in _request\n    resp = self._conn.request(method, url, body=body, headers=headers)\n",
@@ -7214,7 +7214,7 @@ body.skin-3 {
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connectionpool.py\", line 663, in urlopen\n    return self.urlopen(method, url, body, headers, retries,\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connectionpool.py\", line 637, in urlopen\n    retries = retries.increment(method, url, error=e, _pool=self,\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\util\\retry.py\", line 399, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\n",
-                "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=11276): Max retries exceeded with url: /session/a4b8687c474897244239eb991404f6b3/timeouts (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016D7489AEE0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))\n"
+                "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4505): Max retries exceeded with url: /session/759d088685a9b30d2eca737b9533c268/window/maximize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002150A74B5E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))\n"
             ]
         },
         {
@@ -7241,14 +7241,14 @@ body.skin-3 {
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\http\\client.py\", line 944, in send\n    self.connect()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connection.py\", line 181, in connect\n    conn = self._new_conn()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connection.py\", line 167, in _new_conn\n    raise NewConnectionError(\n",
-                "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000016D748AC8E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\n",
+                "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002150A807160>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\n",
                 "\nDuring handling of the above exception, another exception occurred:\n\n",
                 "Traceback (most recent call last):\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 672, in run\n    self._callSetUp()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 630, in _callSetUp\n    self.setUp()\n",
-                "  File \"E:\\GitHub\\Web_Framework\\testcases\\test_login.py\", line 22, in setUp\n    self.driver.implicitly_wait(30)\n",
-                "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 911, in implicitly_wait\n    self.execute(Command.SET_TIMEOUTS, {\n",
+                "  File \"E:\\GitHub\\Web_Framework\\testcases\\test_login.py\", line 19, in setUp\n    driver.maximize_window()\n",
+                "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 737, in maximize_window\n    self.execute(command, params)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 319, in execute\n    response = self.command_executor.execute(driver_command, params)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 374, in execute\n    return self._request(command_info[0], url, body=data)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 397, in _request\n    resp = self._conn.request(method, url, body=body, headers=headers)\n",
@@ -7260,7 +7260,7 @@ body.skin-3 {
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connectionpool.py\", line 663, in urlopen\n    return self.urlopen(method, url, body, headers, retries,\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connectionpool.py\", line 637, in urlopen\n    retries = retries.increment(method, url, error=e, _pool=self,\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\util\\retry.py\", line 399, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\n",
-                "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=11276): Max retries exceeded with url: /session/a4b8687c474897244239eb991404f6b3/timeouts (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016D748AC8E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))\n"
+                "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4505): Max retries exceeded with url: /session/759d088685a9b30d2eca737b9533c268/window/maximize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002150A807160>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))\n"
             ]
         },
         {
@@ -7287,14 +7287,14 @@ body.skin-3 {
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\http\\client.py\", line 944, in send\n    self.connect()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connection.py\", line 181, in connect\n    conn = self._new_conn()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connection.py\", line 167, in _new_conn\n    raise NewConnectionError(\n",
-                "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000016D748ACE20>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\n",
+                "urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002150A722F40>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。\n",
                 "\nDuring handling of the above exception, another exception occurred:\n\n",
                 "Traceback (most recent call last):\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 60, in testPartExecutor\n    yield\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 672, in run\n    self._callSetUp()\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\unittest\\case.py\", line 630, in _callSetUp\n    self.setUp()\n",
-                "  File \"E:\\GitHub\\Web_Framework\\testcases\\test_login.py\", line 22, in setUp\n    self.driver.implicitly_wait(30)\n",
-                "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 911, in implicitly_wait\n    self.execute(Command.SET_TIMEOUTS, {\n",
+                "  File \"E:\\GitHub\\Web_Framework\\testcases\\test_login.py\", line 19, in setUp\n    driver.maximize_window()\n",
+                "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 737, in maximize_window\n    self.execute(command, params)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 319, in execute\n    response = self.command_executor.execute(driver_command, params)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 374, in execute\n    return self._request(command_info[0], url, body=data)\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 397, in _request\n    resp = self._conn.request(method, url, body=body, headers=headers)\n",
@@ -7306,15 +7306,15 @@ body.skin-3 {
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connectionpool.py\", line 663, in urlopen\n    return self.urlopen(method, url, body, headers, retries,\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\connectionpool.py\", line 637, in urlopen\n    retries = retries.increment(method, url, error=e, _pool=self,\n",
                 "  File \"E:\\Program Files\\Python\\Python3.8\\lib\\site-packages\\urllib3\\util\\retry.py\", line 399, in increment\n    raise MaxRetryError(_pool, url, error or ResponseError(cause))\n",
-                "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=11276): Max retries exceeded with url: /session/a4b8687c474897244239eb991404f6b3/timeouts (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016D748ACE20>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))\n"
+                "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4505): Max retries exceeded with url: /session/759d088685a9b30d2eca737b9533c268/window/maximize (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002150A722F40>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))\n"
             ]
         }
     ],
     "testName": "cnode登录功能测试报告",
     "testAll": 4,
     "testFail": 3,
-    "beginTime": "2020-02-22 22:20:17",
-    "totalTime": "60s",
+    "beginTime": "2020-02-28 18:25:45",
+    "totalTime": "66s",
     "testSkip": 0,
     "testError": 0
 };
