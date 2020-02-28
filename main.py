@@ -28,6 +28,7 @@ if __name__ == '__main__':
     suite=suite()
     result=BeautifulReport(suite)
     result.report(filename='cnode',description='cnode登录功能测试报告',report_dir='./report')
+    #发送邮件
     send_email(subject='conde论坛登录功能测试报告')
 
     log.info('运行结束')
