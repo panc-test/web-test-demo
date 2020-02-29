@@ -1,11 +1,15 @@
 web自动化测试框架搭建：
-testcases-测试用例
+
 main.py-程序主入口
-actions-操作方法
-util-工具类
-pom-pom模型
+testcases-测试用例
+data-测试数据
+images-测试截图
 report-测试报告
+common-存放一些通用信息，如浏览器驱动
+util-工具类：截图方法，日志方法，发送邮件方法
+pom-pom模型,存放测试页面的元素,如注册、登录，发帖页面
 logs-日志
+
 
 
 主要测试点：

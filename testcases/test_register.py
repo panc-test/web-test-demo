@@ -4,8 +4,7 @@
 
 import time
 import unittest
-from selenium import  webdriver
-from util.basic_driver import driver
+from common.basic_driver import driver
 from pom.register_page import Register_Page
 
 

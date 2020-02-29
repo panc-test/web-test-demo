@@ -41,7 +41,7 @@ class Log(object):
             self.logger.info(msg)
 
         elif name=='warn':
-            self.logger.warnings(msg,exc_info=True)
+            self.logger.warning(msg,exc_info=True)
 
         elif name=='error':
             self.logger.error(msg,exc_info=True)        #exc_info=True输出error详细信息

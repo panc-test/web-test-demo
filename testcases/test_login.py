@@ -3,13 +3,14 @@
 '''
 
 import unittest
-from util.basic_driver import driver
+from common.basic_driver import driver
 from pom.login_page import Login_Page
-from actions.image import Screeenshots
 from ddt import ddt,file_data
+from util.log import Log
+
 
 page = Login_Page()
-image = Screeenshots()
+log=Log()
 
 @ddt
 class Test_Login(unittest.TestCase):
@@ -31,10 +32,37 @@ class Test_Login(unittest.TestCase):
         page.go_login()
         #执行测试用例
         page.login(loginname=name,password=passwd)
-        #测试结果截图
-        image.info_screenshots()
+
 
         #断言测试结果和预期结果
+        result_text=page.get_login_result()
+
+        self.assertEqual(result_text, assert_text)
+
+        '''
+        注意这种方法是不行的，虽然断言失败了，但是被except中定义的异常类捕获，测试用例仍然pas
+        try:
+            self.assertEqual(result_text,assert_text)
+            image.info_screenshots()
+        except  AssertionError as e:
+            log.warn(e)
+            image.error_screenshots()
+        '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

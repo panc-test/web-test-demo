@@ -3,7 +3,7 @@ POM模型-用户注册界面的操作
 
 '''
 
-from util.basic_driver import driver
+from common.basic_driver import driver
 from util.log import Log
 from selenium.common.exceptions import NoSuchElementException
 
