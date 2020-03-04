@@ -3,25 +3,23 @@
 '''
 
 import unittest     #单元测试框架
-from util.log import Log    #日志
-from testcases.test_login import Test_Login #测试用例
-from BeautifulReport import  BeautifulReport    #测试报告
+from util.log import Log
+from testcases.test_cnode import Cnode
+from BeautifulReport import  BeautifulReport
 from util.zip import get_zipfile
 from util.send_email import send_email
 
 
-
 # 测试套件
 def suite():
-
     suite = unittest.TestSuite()
     loader=unittest.TestLoader()
-    test_cases=loader.loadTestsFromTestCase(Test_Login)
-    suite.addTests(test_cases)
+    testcases=loader.loadTestsFromTestCase(Cnode)
+    suite.addTest(testcases)
     return suite
 
 
-#加载测试套件并生成测试报告
+#加载测试套件并执行测试用例，生成测试报告
 if __name__ == '__main__':
 
     log = Log()

@@ -11,7 +11,7 @@ def get_files_path():
 
     dir = r'E:\GitHub\Web_Framework\images'
     file_paths = []
-    for root, dirs, files in os.walk(dir):  #os.walk()方法的运用
+    for root, dirs, files in os.walk(dir):  #os.walk()方法,遍历时指将指定的目录下的全部目录包括子目录以及文件访问一遍
         for filename in files:
             file_path = os.path.join(root, filename)
             file_paths.append(file_path)

@@ -35,6 +35,7 @@ def send_email():
 
     #添加邮件附件
     zipfile='E:\\GitHub\\Web_Framework\\email_files\\report.zip'
+    # zipfile='../email_files/report.zip'
     file=open(zipfile,'rb')
     part = MIMEBase("application", "octet-stream")
     part.set_payload(file.read())

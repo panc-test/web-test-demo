@@ -46,7 +46,7 @@ class Login_Page():
             log.error(e)
             image.error_screenshots()
 
-    #获取测试结果
+    #获取登录功能测试结果
     def get_login_result(self):
         """
         登录成功 页面跳转到首页，返回用户名  http://39.107.96.138:3000/
@@ -55,8 +55,10 @@ class Login_Page():
         """
         url=driver.current_url  #获取当前页面的url
         if 'signin' not in url:
+            log.info('登录成功')
             result_text=driver.find_element_by_css_selector(self.login_success_css).text
         else:
+            log.info('登录失败')
             result_text=driver.find_element_by_css_selector(self.login_fail_css).text
 
         return result_text
