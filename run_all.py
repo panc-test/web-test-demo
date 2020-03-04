@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     suite=suite()
     result=BeautifulReport(suite)
-    result.report(filename='cnode',description='cnode登录功能测试报告',report_dir='./report')
+    result.report(filename='cnode',description='cnode测试报告',report_dir='./report')
     #压缩文件
     get_zipfile()
     #发送邮件
