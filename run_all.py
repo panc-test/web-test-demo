@@ -6,7 +6,9 @@ import unittest     #单元测试框架
 from util.log import Log    #日志
 from testcases.test_login import Test_Login #测试用例
 from BeautifulReport import  BeautifulReport    #测试报告
-from util.email import send_email
+from util.zip import get_zipfile
+from util.send_email import send_email
+
 
 
 # 测试套件
@@ -28,8 +30,10 @@ if __name__ == '__main__':
     suite=suite()
     result=BeautifulReport(suite)
     result.report(filename='cnode',description='cnode登录功能测试报告',report_dir='./report')
+    #压缩文件
+    get_zipfile()
     #发送邮件
-    send_email(subject='conde论坛登录功能测试报告')
+    send_email()
 
     log.info('运行结束')
 
